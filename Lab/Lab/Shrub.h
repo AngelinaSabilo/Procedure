@@ -3,6 +3,7 @@
 
 #include <fstream>
 #include <string>
+#include "Key.h"
 
 using namespace std;
 
@@ -31,6 +32,6 @@ struct Shrub {
 void In_Shrub(Shrub& S, ifstream& ifst);
 
 //Функция вывода кустарника
-void Out_Shrub(string Name, Shrub& S, ofstream& ofst);
+void Out_Shrub(string Name, Habitation H, Shrub& S, ofstream& ofst);
 
 #endif // SHRUB_H

@@ -15,6 +15,8 @@ struct Plant {
         Tree T;
         Shrub S;
     };
+
+    Habitation H; //Среда обитания
 };
 
 //Функция ввода растения

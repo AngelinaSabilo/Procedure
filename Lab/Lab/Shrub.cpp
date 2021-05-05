@@ -43,7 +43,7 @@ void In_Shrub(Shrub& S, ifstream& ifst) {
     }
 }
 
-void Out_Shrub(string Name, Shrub& S, ofstream& ofst) {
+void Out_Shrub(string Name, Habitation H, Shrub& S, ofstream& ofst) {
     ofst << "It's a shrub with name: " << Name << endl;
     ofst << "Shrub's flowering month is ";
 
@@ -82,6 +82,23 @@ void Out_Shrub(string Name, Shrub& S, ofstream& ofst) {
     }
     else if (S.M == S.DECEMBER) {
         ofst << "December";
+    }
+
+    ofst << endl;
+
+    ofst << "Shrub's habitation is ";
+
+    if (H == TUNDRA) {
+        ofst << "Tundra";
+    }
+    else if (H == DESERT) {
+        ofst << "Desert";
+    }
+    else if (H == STEPPE) {
+        ofst << "Steppe";
+    }
+    else if (H == TAIGA) {
+        ofst << "Taiga";
     }
 
     ofst << endl << endl;
