@@ -26,4 +26,7 @@ void Out_Plant(Plant* P, ofstream& ofst);
 //Функция подсчета числа согласных букв в названии растения
 int Plant_consonant_letters(Plant* P);
 
+//Функция сравнения числа согласных букв в названиях растений 
+bool Compare(Plant* First, Plant* Second);
+
 #endif // PLANT_H

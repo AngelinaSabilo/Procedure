@@ -47,3 +47,27 @@ void Clear_Container(Container* Head) {
         Head = Head->Next;
     }
 }
+
+void Sort(Container* Head) {
+    if (Head->Len > 1) {
+        Container* First = Head;
+        Container* Second = Head->Next;
+
+        Container* Temp = new Container;
+
+        while (First->Next && First->Next->Next) {
+            while (Second && Second->Next) {
+                if (Compare(First->Cont, Second->Cont)) {
+                    Temp->Cont = First->Cont;
+                    First->Cont = Second->Cont;
+                    Second->Cont = Temp->Cont;
+                }
+
+                Second = Second->Next;
+            }
+
+            First = First->Next;
+            Second = First->Next;
+        }
+    }
+}

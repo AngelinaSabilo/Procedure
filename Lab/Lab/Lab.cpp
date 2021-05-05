@@ -21,7 +21,9 @@ int main(int argc, char* argv[]) {
 
     In_Container(Head, ifst); //Ввод элементов в контейнер
 
-    ofst << "Filled container. " << endl;
+    ofst << "Filled and sorted container. " << endl;
+
+    Sort(Head); //Сортировка контейнера
 
     Out_Container(Head, ofst); //Вывод контейнера
 

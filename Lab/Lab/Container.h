@@ -22,4 +22,7 @@ void Out_Container(Container* Head, ofstream& ofst);
 //Функция очистки контейнера
 void Clear_Container(Container* Head);
 
+//Функция сортировки контейнера
+void Sort(Container* Head);
+
 #endif // HEADER_H

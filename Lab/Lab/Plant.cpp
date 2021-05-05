@@ -49,3 +49,7 @@ int Plant_consonant_letters(Plant* P) {
         return -1;
     }
 }
+
+bool Compare(Plant* First, Plant* Second) {
+    return Plant_consonant_letters(First) > Plant_consonant_letters(Second);
+}
