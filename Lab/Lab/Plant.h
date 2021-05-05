@@ -4,6 +4,7 @@
 #include "Key.h"
 #include "Tree.h"
 #include "Shrub.h"
+#include "Flower.h"
 
 //Структура "растение"
 struct Plant {
@@ -14,6 +15,7 @@ struct Plant {
     union {
         Tree T;
         Shrub S;
+        Flower F;
     };
 };
 
