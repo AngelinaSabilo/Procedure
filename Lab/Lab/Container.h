@@ -22,4 +22,7 @@ void Out_Container(Container* Head, ofstream& ofst);
 //Функция очистки контейнера
 void Clear_Container(Container* Head);
 
+//Функция вывода только деревьев
+void Out_Only_Tree(Container* Head, ofstream& ofst);
+
 #endif // HEADER_H
