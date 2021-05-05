@@ -23,4 +23,7 @@ Plant* In_Plant(ifstream& ifst);
 //Функция вывода растения
 void Out_Plant(Plant* P, ofstream& ofst);
 
+//Функция подсчета числа согласных букв в названии растения
+int Plant_consonant_letters(Plant* P);
+
 #endif // PLANT_H

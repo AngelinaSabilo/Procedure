@@ -32,6 +32,10 @@ void Out_Container(Container* Head, ofstream& ofst) {
     for (int i = 0; i < Head->Len; i++) {
         ofst << i << ": ";
         Out_Plant(Head->Cont, ofst);
+
+        ofst << "Amount of consonant letters in the name of plant = " << 
+            Plant_consonant_letters(Head->Cont) << endl << endl;
+
         Head = Head->Next;
     }
 }

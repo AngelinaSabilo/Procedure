@@ -37,3 +37,15 @@ void Out_Plant(Plant* P, ofstream& ofst) {
         ofst << "Incorrect element!" << endl << endl;
     }
 }
+
+int Plant_consonant_letters(Plant* P) {
+    if (P->K == TREE) {
+        return Tree_consonant_letters(P->Name);
+    }
+    else if (P->K == SHRUB) {
+        return Shrub_consonant_letters(P->Name);
+    }
+    else {
+        return -1;
+    }
+}

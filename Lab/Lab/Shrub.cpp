@@ -86,3 +86,20 @@ void Out_Shrub(string Name, Shrub& S, ofstream& ofst) {
 
     ofst << endl << endl;
 }
+
+int Shrub_consonant_letters(string Name) {
+    string Constant_letter = "bcdfghjklmnpqrstvwxzBCDFGHJKLMNPQRSTVWXZ";
+
+    int Amount = 0;
+
+    for (int i = 0; i < Name.length(); i++) {
+        for (int j = 0; j < Constant_letter.length(); j++) {
+            if (Name[i] == Constant_letter[j]) {
+                Amount++;
+                break;
+            }
+        }
+    }
+
+    return Amount;
+}
