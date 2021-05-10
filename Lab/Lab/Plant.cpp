@@ -22,6 +22,14 @@ Plant* In_Plant(ifstream& ifst) {
 
         In_Shrub(P->S, ifst);
     }
+    else if (K == 3) {
+        P = new Plant;
+        P->K = FLOWER;
+
+        ifst >> P->Name;
+
+        In_Flower(P->F, ifst);
+    }
 
     return P;
 }
@@ -32,6 +40,9 @@ void Out_Plant(Plant* P, ofstream& ofst) {
     }
     else if (P->K == SHRUB) {
         Out_Shrub(P->Name, P->S, ofst);
+    }
+    else if (P->K == FLOWER) {
+        Out_Flower(P->Name, P->F, ofst);
     }
     else {
         ofst << "Incorrect element!" << endl << endl;
