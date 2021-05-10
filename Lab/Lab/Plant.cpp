@@ -62,6 +62,23 @@ Plant* In_Plant(ifstream& ifst) {
 
         ifst >> P->Name;
 
+        string Habitant = "";
+
+        ifst >> Habitant;
+
+        if (Habitant == "Tundra") {
+            P->H = TUNDRA;
+        }
+        else if (Habitant == "Desert") {
+            P->H = DESERT;
+        }
+        else if (Habitant == "Steppe") {
+            P->H = STEPPE;
+        }
+        else if (Habitant == "Taiga") {
+            P->H = TAIGA;
+        }
+
         In_Flower(P->F, ifst);
     }
 
@@ -76,7 +93,7 @@ void Out_Plant(Plant* P, ofstream& ofst) {
         Out_Shrub(P->Name, P->H, P->S, ofst);
     }
     else if (P->K == FLOWER) {
-        Out_Flower(P->Name, P->F, ofst);
+        Out_Flower(P->Name, P->H, P->F, ofst);
     }
     else {
         ofst << "Incorrect element!" << endl << endl;

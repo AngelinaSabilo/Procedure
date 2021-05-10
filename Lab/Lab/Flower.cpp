@@ -16,7 +16,7 @@ void In_Flower(Flower& F, ifstream& ifst) {
     }
 }
 
-void Out_Flower(string Name, Flower& F, ofstream& ofst) {
+void Out_Flower(string Name, Habitation H, Flower& F, ofstream& ofst) {
     ofst << "It's a flower with name: " << Name << endl;
     ofst << "Flower's type is ";
 
@@ -28,6 +28,23 @@ void Out_Flower(string Name, Flower& F, ofstream& ofst) {
     }
     else if (F.T == F.WILD) {
         ofst << "Wild";
+    }
+
+    ofst << endl;
+
+    ofst << "Flower's habitation is ";
+
+    if (H == TUNDRA) {
+        ofst << "Tundra";
+    }
+    else if (H == DESERT) {
+        ofst << "Desert";
+    }
+    else if (H == STEPPE) {
+        ofst << "Steppe";
+    }
+    else if (H == TAIGA) {
+        ofst << "Taiga";
     }
 
     ofst << endl << endl;

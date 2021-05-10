@@ -3,6 +3,7 @@
 
 #include <fstream>
 #include <string>
+#include "Key.h"
 
 using namespace std;
 
@@ -22,6 +23,6 @@ struct Flower {
 void In_Flower(Flower& F, ifstream& ifst);
 
 //Функция вывода цветка
-void Out_Flower(string Name, Flower& F, ofstream& ofst);
+void Out_Flower(string Name, Habitation H, Flower& F, ofstream& ofst);
 
 #endif // FLOWER_H
