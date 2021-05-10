@@ -50,7 +50,7 @@ void Out_Plant(Plant* P, ofstream& ofst) {
 }
 
 int Plant_consonant_letters(Plant* P) {
-    if (P->K == TREE || P->K == SHRUB) {
+    if (P->K == TREE || P->K == SHRUB || P->K == FLOWER) {
         string Constant_letter = "bcdfghjklmnpqrstvwxzBCDFGHJKLMNPQRSTVWXZ";
 
         int Amount = 0;
