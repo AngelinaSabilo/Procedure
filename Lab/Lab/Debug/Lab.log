@@ -1,11 +1,10 @@
 ﻿  Container.cpp
   Lab.cpp
   Plant.cpp
+C:\Users\of913\source\repos\11_2_2_1_Git\Procedure\Lab\Lab\Plant.cpp(47,27): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\of913\source\repos\11_2_2_1_Git\Procedure\Lab\Lab\Plant.cpp(48,31): warning C4018: <: несоответствие типов со знаком и без знака
   Shrub.cpp
-C:\Users\of913\source\repos\11_2_2_1_Git\Procedure\Lab\Lab\Shrub.cpp(95,23): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\of913\source\repos\11_2_2_1_Git\Procedure\Lab\Lab\Shrub.cpp(96,27): warning C4018: <: несоответствие типов со знаком и без знака
   Tree.cpp
-C:\Users\of913\source\repos\11_2_2_1_Git\Procedure\Lab\Lab\Tree.cpp(17,23): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\of913\source\repos\11_2_2_1_Git\Procedure\Lab\Lab\Tree.cpp(18,27): warning C4018: <: несоответствие типов со знаком и без знака
   Создание кода...
+  LINK : не найден или не выполнена сборка C:\Users\of913\source\repos\11_2_2_1_Git\Procedure\Lab\Debug\Lab.exe при последней инкрементной компоновке; выполняется полная компоновка
   Lab.vcxproj -> C:\Users\of913\source\repos\11_2_2_1_Git\Procedure\Lab\Debug\Lab.exe

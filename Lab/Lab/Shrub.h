@@ -33,7 +33,4 @@ void In_Shrub(Shrub& S, ifstream& ifst);
 //Функция вывода кустарника
 void Out_Shrub(string Name, Shrub& S, ofstream& ofst);
 
-//Функция подсчета числа согласных букв в названии кустарника
-int Shrub_consonant_letters(string Name);
-
 #endif // SHRUB_H

@@ -39,11 +39,21 @@ void Out_Plant(Plant* P, ofstream& ofst) {
 }
 
 int Plant_consonant_letters(Plant* P) {
-    if (P->K == TREE) {
-        return Tree_consonant_letters(P->Name);
-    }
-    else if (P->K == SHRUB) {
-        return Shrub_consonant_letters(P->Name);
+    if (P->K == TREE || P->K == SHRUB) {
+        string Constant_letter = "bcdfghjklmnpqrstvwxzBCDFGHJKLMNPQRSTVWXZ";
+
+        int Amount = 0;
+
+        for (int i = 0; i < P->Name.length(); i++) {
+            for (int j = 0; j < Constant_letter.length(); j++) {
+                if (P->Name[i] == Constant_letter[j]) {
+                    Amount++;
+                    break;
+                }
+            }
+        }
+
+        return Amount;
     }
     else {
         return -1;

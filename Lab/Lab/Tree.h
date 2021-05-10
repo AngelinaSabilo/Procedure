@@ -17,7 +17,4 @@ void In_Tree(Tree& T, ifstream& ifst);
 //Функция вывода дерева
 void Out_Tree(string Name, Tree& T, ofstream& ofst);
 
-//Функция подсчета числа согласных букв в названии дерева
-int Tree_consonant_letters(string Name);
-
 #endif // TREE_H
