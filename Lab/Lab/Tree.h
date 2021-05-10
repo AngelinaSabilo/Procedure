@@ -3,6 +3,7 @@
 
 #include <fstream>
 #include <string>
+#include "Key.h"
 
 using namespace std;
 
@@ -15,6 +16,6 @@ struct Tree {
 void In_Tree(Tree& T, ifstream& ifst);
 
 //Функция вывода дерева
-void Out_Tree(string Name, Tree& T, ofstream& ofst);
+void Out_Tree(string Name, Habitation H, Tree& T, ofstream& ofst);
 
 #endif // TREE_H
