@@ -25,4 +25,7 @@ void Clear_Container(Container* Head);
 //Функция сортировки контейнера
 void Sort(Container* Head);
 
+//Функция вывода только деревьев
+void Out_Only_Tree(Container* Head, ofstream& ofst);
+
 #endif // HEADER_H
